@@ -27,8 +27,8 @@
             controls = new THREE.OrbitControls( camera, renderer.domElement );
 			
 			//ELEMENTOS DE ESCENA
-			var size = 10;
-			var arrowSize = 1;
+			var size = 0.1;
+			var arrowSize = 7;
 			var divisions = size;
 			var origin = new THREE.Vector3( 0, 0, 0 );
 			var x = new THREE.Vector3( 1, 0, 0 );
@@ -64,6 +64,10 @@
       // Create the final object to add to the scene
       var boxObject = new THREE.Mesh( geometry, material );
       scene.add( boxObject );
+      boxObject.position.set(0,0,0.5);
+      boxObject.geometry.rotateX(1.6);
+      boxObject.geometry.rotateZ(1.57);
+      
                
 	  	//AGREGAR A LA ESCENA
       scene.add( gridHelperXZ );

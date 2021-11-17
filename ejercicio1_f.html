@@ -63,10 +63,12 @@
       var geometry = new THREE.SphereGeometry( 1, 100, 100 );
       // Create the final object to add to the scene
       var boxObject = new THREE.Mesh( geometry, material );
+      var t = (45*Math.PI)/180
+
       scene.add( boxObject );
-      boxObject.position.set(0,0,0);
-      boxObject.geometry.rotateX(-1.89);
-      boxObject.geometry.rotateY(-1.57);
+      boxObject.position.set(1,2,1);
+      boxObject.geometry.rotateX(t);
+      boxObject.geometry.rotateY(t);
       boxObject.geometry.scale(0.5,0.5,3);
       
                

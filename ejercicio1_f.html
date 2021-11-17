@@ -61,9 +61,11 @@
       
       var material = new THREE.MeshStandardMaterial( {color: 0xFF5DA2} );
       var geometry = new THREE.SphereGeometry( 1, 100, 100 );
+
       // Create the final object to add to the scene
+
       var boxObject = new THREE.Mesh( geometry, material );
-      var t = (45*Math.PI)/180
+      var t = (45*Math.PI)
 
       scene.add( boxObject );
       boxObject.position.set(1,2,1);
